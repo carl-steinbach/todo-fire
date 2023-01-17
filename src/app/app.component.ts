@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Task } from './task/task';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'kanban-fire';
+  title = 'todo-fire';
 }

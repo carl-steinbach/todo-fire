@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "todo-fire-a927c": {
+      "hosting": {
+        "todo-fire": [
+          "todo-fire-a927c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "todo-fire-a927c"
+  }
+}

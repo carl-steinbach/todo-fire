@@ -1,0 +1,23 @@
+mat-toolbar {
+    background-color: #23022E;
+}
+
+mat-toolbar > span {
+    color: #FFD899;
+}
+
+mat-toolbar > mat-icon {
+    color: #FFD899
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+app-board {
+    flex-grow: 1;
+    background-color: #F6F4F3;
+}

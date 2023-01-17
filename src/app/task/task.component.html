@@ -1,0 +1,19 @@
+<mat-card class="task" [ngClass]="[card_state]" *ngIf="task">
+    <div class="left-buttons">
+        <button class="task-check-button" (click)="checkTask.emit(task); sendTask()">
+            <mat-icon class="task-check-icon">{{ getIconName() }}</mat-icon>
+        </button>
+    </div>
+    <div class="task-text">
+        <h2>{{ task.title }}</h2>
+        <p>{{ task.description }}</p>
+    </div>
+    <div class="task-buttons">
+        <button class="task-button" (click)="edit.emit(task)">
+            <mat-icon class="task-icon">edit</mat-icon>
+        </button>
+        <button class="task-button task-delete-button" (click)="deleteTask.emit(task)">
+            <mat-icon class="task-icon task-delete-icon">highlight_remove</mat-icon>
+        </button>
+    </div>
+</mat-card>

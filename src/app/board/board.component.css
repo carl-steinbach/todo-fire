@@ -1,0 +1,54 @@
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    padding: 1em;
+}
+
+.container {
+    padding: 1em;
+    flex: 1;
+}
+
+.list > h2 {
+    margin: .5em;
+}
+
+/* add button*/
+.add-button-card {
+    margin: 1em 1em 0 1em;
+    padding: .5em;
+}
+
+.add-button-icon {
+    color: #23022E;
+}
+
+.add-button:hover .add-button-icon {
+    color: #FFD899;
+}
+
+/* drag drop */
+.cdk-drop-list-dragging .cdk-drag {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drag-animating {
+    transform: transform 3000ms;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+    transition: transform 250ms;
+}
+
+
+
+

@@ -1,0 +1,15 @@
+<mat-card >
+    <mat-card-header><h3>New Task</h3></mat-card-header>
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput cdkFocusInitial [(ngModel)]="data.task.title" appearance="fill">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="data.task.description" appearance="fill"></textarea>
+    </mat-form-field>
+    <mat-card-actions mat-dialog-actions>
+        <button mat-button [mat-dialog-close]="{ task: data.task }"><mat-icon>check</mat-icon></button>
+        <button mat-button (click)="cancel()"><mat-icon>close</mat-icon></button>
+    </mat-card-actions>
+</mat-card>

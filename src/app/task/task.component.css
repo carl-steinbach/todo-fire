@@ -1,0 +1,80 @@
+mat-card {
+    margin: .5em;
+    background-color: #F6F4F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+mat-card:hover .task-icon{
+    visibility: visible;
+}
+
+.task-text {
+    padding: 1em;
+    flex-grow: 1;
+}
+
+.task-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+.task-button {
+    height: 100%;
+    width: 50px;
+    border: none;
+    border-radius: 0px;
+    visibility: hidden;
+    background-color: #F6F4F3;
+}
+
+.task-check-button {
+    height: 100%;
+    width: 50px;
+    border: none;
+    visibility: visible;
+    background-color: #23022E;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.task-check-icon {
+    color: #FFD899;;
+}
+
+.task-delete-button {
+    border-radius: 0 5px 5px 0;
+}
+
+.task-button:hover {
+    background-color: #23022E;
+}
+
+.task-buttons:hover .task-button {
+    visibility: visible;
+}
+
+.task-icon {
+    color: #23022E;
+    visibility: hidden;
+}
+
+.task-button:hover .task-icon{
+    color: #ffdca3;
+}
+
+/* change styles after checking a task */
+.checked {
+  background-color: #23022E;
+  opacity: 0;
+  transition: opacity 0.333s ease-in;
+}
+
+.checked .task-text {
+    visibility: hidden;
+}
+
+.checked .task-buttons {
+    visibility: hidden;
+}
